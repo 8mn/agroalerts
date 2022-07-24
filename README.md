@@ -1,70 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Agro alerts
+Rain forecasts for farmers via whatsapp and web
 
-## Available Scripts
+# Live demo
+[Demo](https://discover-music.vercel.app/)
 
-In the project directory, you can run:
+# Screenshot
+![Frame 2](https://user-images.githubusercontent.com/64839201/180635917-57cafef4-4d15-489a-aff7-4054cde48631.jpg)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Untitled designwb](https://user-images.githubusercontent.com/64839201/180636033-d52d8d21-3775-4b7d-916b-3ebafc57923b.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Getting started
+For starting the app in your machine, open the terminal and follow these commands:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone the repo
+```
+git clone https://github.com/8mn/agroalerts.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd into working directory
+```
+cd agroalerts
+```
 
-### `npm run eject`
+Install dependencies
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+For starting react app:
+```
+npm run start
+```
+open http://localhost:3000 in browser to access the app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Goals :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- To make it easy to see rain forecasts with whatsapp
 
-## Learn More
+# Approach:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Use Openweathermap to fetch the weather forecast and twilio to send the message on whatsapp
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- You can also acess the forecast via the whatsapp
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Functionalities:
+- Weather forecasts for upto 5 days with 3 hour gap for each day
+- Send your location to whatsapp to get the weather information
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# What's next for Discover music
+- Joining the whatsapp from the website
+- Push notifications
+- Crop field images
 
-### Making a Progressive Web App
+# Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Demo](https://agroalerts.vercel.app/)
+- [Backend](https://github.com/8mn/agro-alerts-server)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Contact
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions/suggestion, Contact me 
+- My Email: `hey@mnsh.me`
+- Twitter: [@oimanish](https://twitter.com/oimanish)
