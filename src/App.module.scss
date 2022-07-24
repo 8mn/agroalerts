@@ -13,6 +13,25 @@
     }
 
 
+    .sandbox{
+        background-color: #fff;
+        padding: 0 2rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        code{
+            background-color: #53ff62;
+            padding: .2rem;
+        }
+
+        h2{
+            text-transform: uppercase;
+        }
+    }
+
+
     .navbar {
         display: flex;
         justify-content: space-between;

@@ -2,11 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Style from "./App.module.scss";
 
-// 1. get location
-// 2. get weather
-// 3. get phone number
-// 4. send alerts
-// 5. test alerts
+import QR from "./frame.png";
 
 function App() {
 	const [latitude, setLatitude] = useState("");
@@ -38,9 +34,7 @@ function App() {
 		}
 	}, [latitude, longitude]);
 
-
-
-	const BACKEND_URL = "https://agro-alerts.herokuapp.com"
+	const BACKEND_URL = "https://agro-alerts.herokuapp.com";
 
 	const getWeather = () => {
 		axios
@@ -80,7 +74,6 @@ function App() {
 		setDay(day);
 	};
 
-
 	const getDate = (day) => {
 		const date = new Date(day);
 		const dayName = date.toLocaleString("en-US", { weekday: "long" });
@@ -88,12 +81,8 @@ function App() {
 		const dayNumber = date.getDate();
 		const year = date.getFullYear();
 
-
-
-
 		return ` ${monthName} ${dayNumber} ${year} ${dayName}`;
-	}
-
+	};
 
 	return (
 		<>
@@ -127,6 +116,19 @@ function App() {
 							{/* <button>Sign up for alerts</button> */}
 						</div>
 					</nav>
+
+					<div className={Style.sandbox}>
+						<div>
+							<h2>Steps to join sandbox</h2>
+
+							<p>
+								1. Save the phone number <code>+1 415 523 8886 </code>on your
+								phone
+							</p>
+							<p>2. Scan the shown QR code to join the sandbox</p>
+						</div>
+						<img src={QR} alt="" />
+					</div>
 					<div className={Style["day-container"]}>
 						{weather &&
 							days.map((d) => {
@@ -137,10 +139,9 @@ function App() {
 										onClick={() => handleClick(d)}
 										style={{
 											backgroundColor: d === day ? "#53ff62" : "",
-											color: d === day ? "#000" : ""
+											color: d === day ? "#000" : "",
 										}}
 									>
-
 										{getDate(d)}
 									</button>
 								);
