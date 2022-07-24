@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Style from "./App.module.scss";
+import Loading from "./components/Loading";
 
 import QR from "./frame.png";
 
@@ -87,7 +88,7 @@ function App() {
 	return (
 		<>
 			{loading ? (
-				<div className={Style.loading}>Loading...</div>
+				<Loading />
 			) : (
 				<div className={Style.App}>
 					<nav className={Style.navbar}>
