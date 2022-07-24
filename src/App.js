@@ -38,9 +38,13 @@ function App() {
 		}
 	}, [latitude, longitude]);
 
+
+
+	const BACKEND_URL = "https://agro-alerts.herokuapp.com"
+
 	const getWeather = () => {
 		axios
-			.post(`http://localhost:5000/api/weather`, {
+			.post(`${BACKEND_URL}/api/weather`, {
 				latitude: latitude,
 				longitude: longitude,
 			})
@@ -75,6 +79,21 @@ function App() {
 	const handleClick = (day) => {
 		setDay(day);
 	};
+
+
+	const getDate = (day) => {
+		const date = new Date(day);
+		const dayName = date.toLocaleString("en-US", { weekday: "long" });
+		const monthName = date.toLocaleString("en-US", { month: "long" });
+		const dayNumber = date.getDate();
+		const year = date.getFullYear();
+
+
+
+
+		return ` ${monthName} ${dayNumber} ${year} ${dayName}`;
+	}
+
 
 	return (
 		<>
@@ -118,9 +137,11 @@ function App() {
 										onClick={() => handleClick(d)}
 										style={{
 											backgroundColor: d === day ? "#ff3e6f" : "",
+											color: d === day ? "#000" : ""
 										}}
 									>
-										{d}
+
+										{getDate(d)}
 									</button>
 								);
 							})}
