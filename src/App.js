@@ -214,6 +214,20 @@ function App() {
 					</div>
 				</div>
 			)}
+			<footer className={Style.Footer}>
+				<div className={Style.sig}>
+					<span>
+						Made by{" "}
+						<a
+							href="http://www.mnsh.me"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Manish
+						</a>
+					</span>
+				</div>
+			</footer>
 		</>
 	);
 }
