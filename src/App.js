@@ -136,7 +136,7 @@ function App() {
 										key={d}
 										onClick={() => handleClick(d)}
 										style={{
-											backgroundColor: d === day ? "#ff3e6f" : "",
+											backgroundColor: d === day ? "#53ff62" : "",
 											color: d === day ? "#000" : ""
 										}}
 									>
