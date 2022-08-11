@@ -3,7 +3,7 @@
 Rain forecasts for farmers via whatsapp and web
 
 # Live demo
-[Demo](https://discover-music.vercel.app/)
+[Demo](https://agroalerts.vercel.app/)
 
 # Screenshot
 ![Frame 2](https://user-images.githubusercontent.com/64839201/180635917-57cafef4-4d15-489a-aff7-4054cde48631.jpg)
